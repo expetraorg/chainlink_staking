@@ -10,6 +10,7 @@ import {
 } from "@thirdweb-dev/react";
 import { BigNumber, ethers } from "ethers";
 import type { NextPage } from "next";
+import { stringify } from "querystring";
 import { useEffect, useState } from "react";
 import styles from "../styles/Home.module.css";
 
@@ -183,7 +184,7 @@ const Stake: NextPage = () => {
                 <h3>{nft?.metadata.name}</h3>
                 <button
                   className="btn cn"
-                  onClick={() => stakeNft(BigInt(nft?.metadata.id))}
+                  onClick={() => stakeNft(nft?.metadata.id)}
                 >
                   Stake
                 </button>
