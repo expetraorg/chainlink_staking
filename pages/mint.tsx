@@ -9,7 +9,7 @@ import { Web3Button } from "@thirdweb-dev/react";
 const Mint: NextPage = () => {
   const router = useRouter();
   
-  /*return (
+  return (
     <div className={styles.container}>
       <h1 className={styles.h1}>Mint An NFT!</h1>
 
@@ -21,7 +21,7 @@ const Mint: NextPage = () => {
       <Web3Button
         colorMode="dark"
         accentColor="#5204BF"
-        contractAddress="0x10BF620547bF5Bb8cAbc62431D0C39C1DB4f4b45"
+        contractAddress="0xC598dE98e2F4cb38f30372212b7a10F52Db57D84"
         action={(contract) => contract.erc721.claim(1)}
         onSuccess={() => {
           alert("NFT Claimed!");
@@ -35,8 +35,9 @@ const Mint: NextPage = () => {
         Claim An NFT
       </Web3Button>
     </div>
-  );*/
+  );
 	
+  /*
   
   // Get the currently connected wallet's address
 	  const address = useAddress();
@@ -45,7 +46,7 @@ const Mint: NextPage = () => {
 	const connectWithMetamask = useMetamask();
 
 	// Get the NFT Collection contract
-	const nftDropContract = useContract("0x10BF620547bF5Bb8cAbc62431D0C39C1DB4f4b45", "nft-drop").contract;
+	const nftDropContract = useContract("0xC598dE98e2F4cb38f30372212b7a10F52Db57D84", "nft-drop").contract;
 	async function claimNft() {
     try {
       const tx = await nftDropContract?.claim(1);
@@ -79,6 +80,7 @@ const Mint: NextPage = () => {
       )}
     </div>
   );
+  */
   
 };
 

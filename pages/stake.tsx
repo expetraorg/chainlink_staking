@@ -14,9 +14,9 @@ import { stringify } from "querystring";
 import { useEffect, useState } from "react";
 import styles from "../styles/Home.module.css";
 
-const nftDropContractAddress = "0x10BF620547bF5Bb8cAbc62431D0C39C1DB4f4b45";
-const tokenContractAddress = "0xe63c1b8C952C09b9644Cd2EdE85149b9CE9c7315";
-const stakingContractAddress = "0xEF6F25E14B82b94A835264753E3EF36697d7D3b7";
+const nftDropContractAddress = "0xC598dE98e2F4cb38f30372212b7a10F52Db57D84";
+const tokenContractAddress = "0x929441598cc5e6e332Af89f3dDdca1cAf6B820B4";
+const stakingContractAddress = "0x298b0988BdCE80d630bB06E9B5E5Be21b43e4906";
 const Stake: NextPage = () => {
   // Wallet Connection Hooks
   const address = useAddress();
